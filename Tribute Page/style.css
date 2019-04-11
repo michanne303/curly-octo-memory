@@ -1,0 +1,166 @@
+/*****************
+colors
+00a3e2 blue
+1ba548 green
+fdc800 yellow
+f1860e orange
+e41b13 red
+*/
+/*-------------------------
+Standard properties
+*/
+*{
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h1,h2 {
+  color: #00a3e2;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-------------------------
+Header properties
+*/
+
+#tribute-info h1, h2, p {
+  text-align: center;
+}
+
+#tribute-info p{
+  color: #f1860e;
+  text-align: center;
+  font-style: italic;
+  padding: 10px 0;
+  width: 60%;
+  margin: auto;
+}
+
+/*-------------------------
+Box logo properties
+*/
+.container{
+  width: 100%;
+  display: inline-flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+}
+.box{
+	width:2em;
+	height:2em;
+  margin: 1em .75em;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+}
+
+.blue{
+	background:#00a3e2;
+}
+.green{
+	background:#1ba548;
+}
+.yellow{
+	background:#fdc800;
+}
+.orange{
+	background:#f1860e;
+}
+.red{
+	background:#e41b13;
+}
+/*-------------------------
+Image properties
+*/
+#img-div {
+  display: block;
+  margin: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+ #img-div img{
+   display: block;
+   margin: auto;
+   border: solid #000;
+   border-width: 1px 1px;
+   padding: 15px 15px 60px 15px;
+   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) inset,5px 5px 8px rgba(0, 0, 0, 0.5) ;
+
+ }
+
+ #img-caption{
+   color: rgba(0, 0, 0, 0.6);
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ /*-------------------------
+ Timeline properties
+ */
+
+.timeline-list {
+  margin: auto;
+  max-width: 65%;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+.timeline li {
+  text-align: justify;
+  padding-top: .5em;
+}
+.important-event{
+  color: #e41b13;
+  /* font-weight: bolder;  */
+}
+li::before {
+  content: "•";
+  color: #00a3e2;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+.more-information{
+  display: block;
+  margin: auto;
+  border-top: 1px;
+  color: #00a3e2;
+}
+.more-information a{
+  color: #f1860e;
+}
+.more-information a:hover{
+  color: inherit;
+}
+
+/*-------------------------
+Media Queries
+*/
+
+@media (max-width: 719px) {
+  img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .timeline-list{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  img{
+    max-width: 95%;
+    display: block;
+    height: auto;
+  }
+  .timeline-list{
+    max-width: 90%;
+  }
+}
